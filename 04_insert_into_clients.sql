@@ -1,0 +1,10 @@
+INSERT into clients (id, firstname, passport) values (1, 'Bob', '223142');
+INSERT into clients (id, firstname, passport) values (2, 'Livito', '456274');
+INSERT into clients (id, firstname, passport) values (3, 'Lorenco', '776321');
+UPDATE clients SET passport = '112096' WHERE id = 3;
+INSERT into clients (id, firstname, passport) values (4, 'Violeta', '667291');
+Insert Into clients_tour (client_id, tour_id) values (1, 2);
+Insert Into clients_tour (client_id, tour_id) values (2, 1);
+Insert Into clients_tour (client_id, tour_id) values (3, 2);
+Insert Into clients_tour (client_id, tour_id) values (4, 2);
+Insert Into clients_tour (client_id, tour_id) values (4, 3);
