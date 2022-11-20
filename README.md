@@ -67,3 +67,8 @@
 Разработать триггер на добавление тура, обновляющая общее
 число различных туров для тур-фирмы (для обновления
 разработать процедуру)***
+
+## Notes
+Запуск Docker postgresql
+
+docker run --name LabDataBase -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=root -e POSTGRES_DB=LabBD postgres:13.3
