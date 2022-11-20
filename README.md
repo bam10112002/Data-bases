@@ -72,3 +72,6 @@
 Запуск Docker postgresql
 
 docker run --name LabDataBase -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=root -e POSTGRES_DB=LabBD postgres:13.3
+
+## Sourse
+* [Запуск БД](https://habr.com/ru/post/578744)
