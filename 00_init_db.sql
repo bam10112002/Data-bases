@@ -14,13 +14,15 @@ create table if not exists clients_tour(
     client_id serial not null,
     tour_id serial not null,
     discount int default 0,
+    count int default 1,
     PRIMARY KEY (client_id, tour_id)
 );
 
 create table if not exists travel_agency (
     id serial not null primary key,
     name varchar(255) not null unique,
-    inn varchar(255) not null unique
+    inn varchar(255) not null unique,
+    count_tours int default 0
 );
 
 create table if not exists tour (
@@ -36,5 +38,6 @@ create table if not exists tour (
 create table if not exists clients (
     id serial not null primary key,
     firstname varchar(255) not null,
+    age int default 20,
     passport varchar(255)
 );
